@@ -328,8 +328,9 @@ nav ul li a span.rotate{
 .ads .ad1 {
     width: 82.5%;
     height: 122px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-bottom: 30px;
+    /* background-color: red; */
 }
 .ads .ad1 img{
     width: 100%;
@@ -531,3 +532,15 @@ font-size: 12px;
     transform: scale(1.1);
 }
     /* -------------------------column-3---------------------------------------------------- */
+
+
+    /* ---------------------ads1-------------------------- */
+
+    .ads1{
+        width: 82.5%;
+        height: auto;
+        /* background-color: red; */
+    }
+    .ads1 img{
+        width: 100%;
+    }
