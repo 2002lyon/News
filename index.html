@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="js/script.js"></script>
+    <title>News Portal | Home</title>
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <!-- -------------------navbar----------------------------------------------- -->
+        <nav id="navbar">
+            <div class="bars" id="bar">
+                <span class="fal fa-bars"></span>
+            </div>
+            <a href="">National</a>
+            <a href="">politics</a>
+            <a href="">business</a>
+            <a href="">Valley</a>
+            <a href="">international</a>
+            <a href="">sports</a>
+            <a href="">Culture and Arts</a>
+
+
+        </nav>
+    </header>
+    <!-- -------------------navbar----------------------------------------------- -->
+
+    <!-- -------------------------nav and sidebar-------------------------------------------  -->
+
+    <nav class="sidebar">
+        <div class="text">Categories</div>
+        <ul>
+            <li><a href="">national</a></li>
+            <li><a href="">politics</a></li>
+            <li><a href="">business</a></li>
+
+            <li>
+                <a href="#" class="val-btn">Valley
+                    <span class="fal fa-angle-down first"></span>
+                </a>
+
+                <ul class="val-show">
+                    <li><a href="#">Kathmandu</a></li>
+                    <li><a href="#">Lalitpur</a></li>
+                    <li><a href="#">Bhaktapur</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">international</a></li>
+
+            <li>
+                <a href="#" class="spor-btn">Sports
+                    <span class="fal fa-angle-down second"></span>
+                </a>
+
+                <ul class="spor-show">
+                    <li><a href="#">Cricket</a></li>
+                    <li><a href="#">football</a></li>
+                    <li><a href="#">international Sports</a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="#">Culture and Arts</a></li>
+            <li><a href="#">travel</a></li>
+            <li><a href="#">health</a></li>
+            <li><a href="#">food</a></li>
+            <li><a href="#">climate and environment</a></li>
+
+        </ul>
+    </nav>
+    <!-- -------------------------nav and sidebar-------------------------------------------  -->
+
+
+    <!-- ---------------------------------------script for sidebar---------------------------------------------- -->
+
+    <!-- ==================(Please work Carefully)============================== -->
+
+    <script>
+        $('.bars').click(function () {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        })
+
+
+
+
+        $('.val-btn').click(function () {
+            $('nav ul .val-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+
+        });
+        $('.spor-btn').click(function () {
+            $('nav ul .spor-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    </script>
+
+    <!-- ---------------------------------------script for sidebar---------------------------------------------- -->
+
+
+
+    <!-- ---------------------main head------------------------------------------ -->
+    <div class="start_cont wrapper">
+
+        <div class="logo">
+            <img src="img/logo.PNG" alt="">
+        </div>
+
+        <span class="date">Thursday, March 24, 2022</span>
+
+    </div>
+
+
+    <!-- ----------------------------------------main-trending----------------------------------------- -->
+    <section id="main wrapper">
+        <div class="row1 wrapper">
+            <h4 class="h4-main">Trending Now:</h4>
+            <ul>
+                <li> <a href="#">Covid-19</a> </li>
+                <li> <a href="#">MCC</a> </li>
+                <li> <a href="#">Elections</a> </li>
+                <li> <a href="#">CPN-UML</a> </li>
+                <li> <a href="#">Ukraine Russia Tensions</a> </li>
+                <li> <a href="#">Pollution</a> </li>
+                <li> <a href="#">Rising price of Petrol</a> </li>
+
+            </ul>
+        </div>
+
+
+
+
+        <!-- --------------trending-script--------------------------------------- -->
+        <script>
+            $('.row1 ul li').click(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+        </script>
+
+        <!-- --------------trending-script--------------------------------------- -->
+
+        <!-- ----------------------------------------main-trending----------------------------------------- -->
+
+        <!-- --------------------------------------main-ads------------------------------------- -->
+
+        <div class="ads">
+            <div class="ad wrapper">
+                <a href=""> <img src="img/ad1.jpeg" alt=""></a>
+            </div>
+
+            <div class="ad1 wrapper">
+                <!-- <img src="img/ad3.gif" alt=""> -->
+                <h2>AD display here</h2>
+            </div>
+        </div>
+
+
+        <div class="news wrapper">
+
+            <!-- =========================column-1========================================================= -->
+            <div class="col1 ">
+
+                <div class="col1-news">
+                    <a href="">
+                        <h5 class="h5-main">Power supply to industries in three regions cut off due to reduced imports
+                            from India</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news1.jfif" alt=""></a>
+                        </div>
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="col1-news">
+                    <a href="">
+                        <h5 class="h5-main">Power supply to industries in three regions cut off due to reduced imports
+                            from India</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <img src="img/news2.jpg" alt="">
+                        </div>
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quo? </p>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col1-news">
+                    <a href="">
+                        <h5 class="h5-main">Power supply to industries in three regions cut off due to reduced imports
+                            from India</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <img src="img/news2.jpg" alt="">
+                        </div>
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quo? </p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================column-1========================================================= -->
+
+
+            <!-- -------------------------------------------------column-2---------------------------------- -->
+            <div class="col2">
+                <div class="col2-news">
+            
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <img src="img/mid-news1.png" alt="">
+                        </div>
+
+                        <a href="">
+                            <h5 class="h5-main">Poll commission plans video tracking of ballot counting</h5>
+                        </a>
+                        <a href=""><span class="writer">By name of writer</span></a>
+
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quo? </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col2-news">
+            
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <img src="img/mid-news2.png" alt="">
+                        </div>
+
+                        <a href="">
+                            <h5 class="h5-main">Poll commission plans video tracking of ballot counting</h5>
+                        </a>
+                        <a href=""><span class="writer">By name of writer</span></a>
+
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quo? </p>
+                    </div>
+
+                </div>
+
+                <div class="col2-news">
+            
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <img src="img/mid-news3.png" alt="">
+                        </div>
+
+                        <a href="">
+                            <h5 class="h5-main">Poll commission plans video tracking of ballot counting</h5>
+                        </a>
+                        <a href=""><span class="writer">By name of writer</span></a>
+
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quo? </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- -------------------------------------------------column-2---------------------------------- -->
+
+            <!-- ----------------------------------column-3---------------------------------------------------- -->
+
+            <div class="col3">
+
+
+                <div class="col3-news">
+                    <a href="">
+                        <h5 class="h5-main">Power supply to industries in three regions cut off due to reduced imports
+                            from India</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news1.jfif" alt=""></a>
+                        </div>
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col3-news">
+                    <a href="">
+                        <h5 class="h5-main">Power supply to industries in three regions cut off due to reduced imports
+                            from India</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news2.jpg" alt=""></a>
+                        </div>
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col3-news">
+                    <a href="">
+                        <h5 class="h5-main">Power supply to industries in three regions cut off due to reduced imports
+                            from India</h5>
+                    </a>
+
+                    <a href=""><span class="writer">By name of writer</span></a>
+
+                    <div class="news-img">
+                        <div class="newsimg">
+                            <a href=""><img src="img/news2.jpg" alt=""></a>
+                        </div>
+                        <p class="p-main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid
+                            minus deleniti maiores repellendus Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------column-3---------------------------------------------------- -->
+    </section>
+
+
+
+
+    <!-- -----------------another-ad----------------------------- -->
+
+    <div class="ads1 wrapper">
+        <img src="img/ad3.gif" alt="">
+    </div>
+</body>
+
+</html>
