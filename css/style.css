@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:wght@400;700&family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 
 /* ------------------global styles---------------------------- */
@@ -46,6 +46,29 @@
     margin-right: 8px;
 }
 
+.h6-main{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.normal {
+    padding: 13px 22px;
+    background: #ffbd27;
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.height-less{
+    margin-top: -20px;
+}
+
+.normal:hover{
+    background: #fbb309;
+}
 /* ------------------global styles---------------------------- */
 
 
@@ -161,6 +184,9 @@ nav ul {
 nav ul li{
     line-height: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   
+
+
 }
 
 nav ul li:last-child{
@@ -341,7 +367,6 @@ nav ul li a span.rotate{
 .ads .ad1 {
     width: 82.5%;
     height: 122px;
-    /* border: 2px solid red; */
     margin-bottom: 30px;
     /* background-color: red; */
 }
@@ -358,6 +383,7 @@ nav ul li a span.rotate{
 .news{
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 1PX 10px gray
 }
 
 /* -----------------------------------column-1------------------------------------------ */
@@ -371,6 +397,7 @@ nav ul li a span.rotate{
     padding: 15px 8px;
     /* flex-wrap: wrap; */
     margin-right: 12px;
+    /* box-shadow: 0 1PX 10px gray */
 }
 
 .col1 .col1-news{
@@ -418,7 +445,7 @@ font-size: 12px;
 
 .col2{
     width: 42%;
-    /* border: 1px solid gray; */
+    /* box-shadow: 0 1PX 10px gray */
 }
 
 .col2{
@@ -427,7 +454,7 @@ font-size: 12px;
     
     overflow: hidden;
     padding: 15px 8px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-right: 12px;
 }
 
@@ -486,7 +513,7 @@ font-size: 12px;
 
 .col3{
     width: 28%;
-    /* border: 1px solid green; */
+    /* box-shadow: 0 1PX 10px gray */
 }
 
 .col3{
@@ -566,6 +593,7 @@ font-size: 12px;
     color: red;
     margin-bottom: 40px;
     position: relative;
+    margin-top: 40px;
     
 }
 .heading::after{
@@ -581,18 +609,21 @@ font-size: 12px;
 .news_2{
     display: flex;
     /* border: 2px solid orange; */
+    box-shadow: 0 1PX 10px gray;
+    
 }
 
 
-.col-1{
+.col-1 {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 71%;
     /* border: 1px solid red; */
     overflow: hidden;
     padding: 15px 8px;
     /* flex-wrap: wrap; */
     margin-right: 12px;
+    margin-bottom: 50px;
 }
 
 .col-1 a{
@@ -637,20 +668,225 @@ font-size: 12px;
 }
 
 .col-2{
-    width: 30%;
-    border: 2px solid green;
+    width: 28%;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
+    
 }
 
-.ad{
-    border: 2px solid red;
-    width: 100%;
+.col-2 .ads{
+    /* border: 2px solid red; */
+    /* width: 100%; */
     height: auto;
-
+    /* border: 2px solid red; */
+    margin: 0 0;
+    margin-bottom: 30px;
 }
 
-.ad-1 img{
+.col-2 .ads img {
     width: 100%;
     height: auto;
+    padding-right: 12px;
+}
+
+
+/* ----------------------------------------------------------- */
+
+.news-slider{
+    width: 83%;
+    display: flex;
+    /* box-shadow: 0 1PX 10px gray; */
+    padding: 10px 0;
+    align-items: center;
+}
+
+.flow{
+    overflow: hidden;
+}
+.news-slide1{
+    width: 25%;
+    height: 470px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    margin: 0px 15px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02)
+}
+
+
+
+.news-slide1:first-child{
+    margin-left: 0px;
+}
+
+
+.news-slider .news-slide1::before{
+    content: '';
+    background: linear-gradient(to top,rgba(0,0,0,0.88),rgba(0,0,0,0.68),transparent,transparent);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.news-slide1 img{
+    width: 900px;
+    height: 100%;
+    /* object-position: center; */
+    /* object-fit: cover; */
+    transition: transform 0.4s ease;
+}
+
+
+.text-1{
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 75%;
+    left: 0;
+}
+
+.text-1 a >h5{
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 2px 3px 40px #fff;
+    padding: 4px 5px;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+    /* text-align: justify; */
+    margin: 0px 10px;
+}
+
+.text-1 a{
+    text-decoration: none;
+}
+
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../img/newsletter.png);
+    background-position: 20% 30%;
+    background-repeat: no-repeat;
+    background-color: #041e42;
+    margin: 50px 0px;
+    padding: 50px 130px;
+}
+
+#newsletter h4{
+font-size: 22px;
+font-weight: 700;
+color: #fff;
+}
+
+#newsletter p{
+font-size: 14px;
+font-weight: 600;
+color: #6d6e71;
+}
+
+#newsletter p span{
+color: #ffbd27;
+}
+
+
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 80%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+   
+}
+
+
+.foot{
+    display: flex;
+    
+}
+
+.foot a{
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 15px;
+    transition: color 0.4s ease;
+}
+
+.foot a:hover{
+    color: #6d6e71;
+}
+
+.foot h5{
+    font-size: 20px;
+}
+
+.foot ul{
+    padding: 0px;
+}
+
+.foot ul li {
+    list-style:  none;
+    line-height: 25px;
+    gap: 10px;
+   
+}
+
+.foot-1{
+    margin-right: 40px;
+}
+
+
+.foot-2{
+    margin: 0px 80px;
+    /* border: 2px solid red; */
+}
+
+.icons{
+    display: flex;
+}
+.icons ul{
+    display: flex;
+}
+
+.icons ul li{
+    padding: 10px 40px;
+    font-size: 23px;
+}
+
+.icons ul :first-child{
+    padding-left: 0px;
+}
+
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #1f1f1f;
+    margin-top: 50px;
+}
+.end p{
+    color: white;
 }
