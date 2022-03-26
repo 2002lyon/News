@@ -491,9 +491,10 @@ nav ul li a span.rotate{
     /* box-shadow: 0 1PX 10px gray */
 }
 
-.col1 .col1-news{
+.col1 .col1-news {
     margin-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.06);
+    padding: 8px 11px;
 }
 
 .col1 .col1-news a{
@@ -557,6 +558,7 @@ font-size: 12px;
     margin-bottom: 50px;
     background-color: rgba(0, 0, 0, 0.06);
     margin-top: -7px;
+    padding: 8px 11px;
 }
 
 .col2 .col2-news a{
@@ -624,6 +626,8 @@ font-size: 12px;
 .col3 .col3-news{
     margin-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.06);
+    padding: 8px 11px;
+    color: #;
 }
 
 .col3 .col3-news a{
@@ -725,10 +729,12 @@ font-size: 12px;
     margin: 10px 0;
 }
 
-.col-1 .col-1-news{
+.col-1 .col-1-news {
     display: flex;
     padding-bottom: 30px;
+    /* border-bottom: 1px solid #e2d8d8; */
 }
+
 
 .col-1-info{
     display: flex;
