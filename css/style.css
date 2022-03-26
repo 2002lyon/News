@@ -11,6 +11,7 @@
 
 .border{
     border-bottom: 2px solid #ccc5c5;
+    padding-top: 10px;
 }
 
 
@@ -866,7 +867,7 @@ font-size: 12px;
     color: #fff;
     font-weight: 500;
     font-size: 22px;
-    text-shadow: 2px 3px 40px #fff;
+    /* text-shadow: 2px 3px 40px #fff; */
     padding: 4px 5px;
     font-family: 'PT Serif', serif;
     letter-spacing: 1px;
