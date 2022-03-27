@@ -12,8 +12,16 @@
 .border{
     border-bottom: 2px solid #ccc5c5;
     padding-top: 10px;
+    box-shadow: 0px 1px ;
 }
 
+.h1-main{
+    font-size: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0px 10px;
+}
 
 .wrapper{
     margin: 0px 135px;
@@ -75,6 +83,12 @@
 .normal:hover{
     background: #fbb309;
 }
+
+.gap{
+    padding: 0px 125px ;
+}
+
+
 /* ------------------global styles---------------------------- */
 
 
@@ -92,7 +106,6 @@
     z-index: 1000;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.06);
 }
-
 
 #navbar .menu a:first-child{
     margin-left: 0px;
@@ -264,9 +277,128 @@ nav ul li a span.rotate{
     transform: translateY(-50%) rotate(-180deg);
 }
 
-.scrolling-active{
-    background-color: red;
+
+
+
+/* -------------------------big-news------------------------- */
+
+.big-news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1PX 10px gray;
+    padding: 35px 0px;
+    margin-bottom: 70px;
+    margin-top: 50px;
 }
+
+.big-image{
+    width: 80%;
+    height: auto;
+    padding: 20px 0px;
+    overflow: hidden;
+    
+}
+.big-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: transform 0.7s ease;
+}
+
+.big-image img:hover{
+    transform: scale(1.05);
+}
+
+.big-news p{
+    font-size: 20px;
+}
+
+
+/* -------------------------big-news------------------------- */
+
+/* -------------------------------second big-news----------------------- */
+
+
+.second-big{
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+.second-big a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+.sec-1{
+    width: 70%;
+    /* border: 2px solid green; */
+    padding: 20px 20px;
+    box-shadow: 0 1PX 10px gray;
+}
+
+.sec-image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.sec-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.7s ease;
+}
+
+.sec-image img:hover{
+    transform: scale(1.05);
+}
+
+.sec-1 h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.sec-2{
+    width: 30%;
+    /* border: 2px solid black; */
+    margin-left: 30px;
+    
+
+
+}
+.sec1-image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.sec1-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+    transition: transform 0.7s ease;
+}
+
+.sec1-image img:hover{
+    transform: scale(1.05);
+}
+
+
+.sec2-box{
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    box-shadow: 0 1PX 10px gray;
+}
+
+
+/* -------------------------------second big-news----------------------- */
+
+
 
 /* ---------------------main-news---------------------------------- */
 
@@ -281,20 +413,24 @@ nav ul li a span.rotate{
     width: 70%;
     overflow: hidden;
     /* border: 2px solid green; */
-    padding: 14px 10px;
+    padding: 14px 19px;
     box-shadow: 0 1PX 10px gray;
 }
 
 .main-col a{
     text-decoration: none;
 }
-.main-col h2{
-    padding-left: 10px;
+
+.main-col h2 {
+    /* padding-left: 10px; */
     padding-top: 10px;
+    margin-bottom: 15px;
 }
 
 .main-photo{
-    padding: 30px 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     
 }
 
@@ -304,9 +440,15 @@ nav ul li a span.rotate{
     display: block;
     object-fit: cover;
     margin-bottom: 20px;
+    transition: transform 0.7s ease;
 }
 
-.main-photo p{
+.main-photo img:hover{
+    transform: scale(1.05);
+}
+
+
+.main-col p{
     font-size: 14.5px;
     padding: 4px 0;
 }
@@ -319,18 +461,21 @@ nav ul li a span.rotate{
     overflow: hidden;
     margin: 0px 20px;
     padding: 0px 10px;
-    box-shadow: 0 1PX 10px gray;
+    /* box-shadow: 0 1PX 10px gray; */
     margin-right: 0px;
 }
 
-.pri-news{
-    padding: 20px 0px;
+.pri-news {
+    padding: 20px 20px;
+    box-shadow: 0 1PX 10px grey;
+    margin-bottom: 20px;
 }
 
 .pri-photo{
     width: 100%;
     height: auto;
-    /* padding-top: 20px; */
+    overflow: hidden;
+    
 }
 
 .pri-photo img{
@@ -338,6 +483,11 @@ nav ul li a span.rotate{
     height: auto;
     display: block;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.pri-photo img:hover{
+    transform: scale(1.05);
 }
 
 .pri-col h3{
@@ -376,16 +526,19 @@ nav ul li a span.rotate{
     margin: 0 auto;
 }
 
-.start_cont .logo img{
+.start_cont .logo img {
     width: 100%;
     display: block;
     height: auto;
+    padding: 5px 0px;
 }
+
 .start_cont .date{
     position: absolute;
     top: 80%;
     right: 10px;
 }
+
 .start_cont .date{
     font-size: 12px;
     color: #6d6e71;
@@ -479,7 +632,7 @@ nav ul li a span.rotate{
 .news{
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 1PX 10px gray
+    /* box-shadow: 0 1PX 10px gray; */
 }
 
 /* -----------------------------------column-1------------------------------------------ */
@@ -500,6 +653,7 @@ nav ul li a span.rotate{
     margin-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.06);
     padding: 8px 11px;
+    box-shadow: 0 1px 10px grey;
 }
 
 .col1 .col1-news a{
@@ -560,10 +714,11 @@ font-size: 12px;
 }
 
 .col2 .col2-news {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.06);
-    margin-top: -7px;
+    margin-top: 0px;
     padding: 8px 11px;
+    box-shadow: 0 1PX 10px gray;
 }
 
 .col2 .col2-news a{
@@ -628,10 +783,11 @@ font-size: 12px;
     text-decoration: none;
 }
 
-.col3 .col3-news{
+.col3 .col3-news {
     margin-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.06);
     padding: 8px 11px;
+    box-shadow: 0 1PX 10px gray;
 }
 
 .col3 .col3-news a{
@@ -711,7 +867,6 @@ font-size: 12px;
     /* border: 2px solid orange; */
     
 }
-
 .col-1 {
     display: flex;
     flex-direction: column;
@@ -722,8 +877,9 @@ font-size: 12px;
     /* flex-wrap: wrap; */
     margin-right: 12px;
     margin-bottom: 50px;
+    margin-left: -5px;
     background-color: rgba(0, 0, 0, 0.06);
-    box-shadow: 0 1px 10px grey;
+    /* box-shadow: 0 1px 10px grey; */
 }
 
 .col-1 a{
@@ -738,6 +894,9 @@ font-size: 12px;
     display: flex;
     padding-bottom: 30px;
     /* border-bottom: 1px solid #e2d8d8; */
+    box-shadow: 0 1PX 10px gray;
+    padding: 10px 10px;
+    margin: 14px 0px;
 }
 
 
