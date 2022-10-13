@@ -10,9 +10,9 @@
 }
 
 .border{
-    border-bottom: 2px solid #ccc5c5;
+    border-bottom: 2px solid #f4f4f4;
     padding-top: 10px;
-    box-shadow: 0px 1px ;
+/*     box-shadow: 0px 1px ; */
 }
 
 .h1-main{
@@ -286,7 +286,7 @@ nav ul li a span.rotate{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 1PX 10px gray;
+/*     box-shadow: 0 1PX 10px gray; */
     padding: 35px 0px;
     margin-bottom: 70px;
     margin-top: 50px;
@@ -337,7 +337,7 @@ nav ul li a span.rotate{
     width: 70%;
     /* border: 2px solid green; */
     padding: 20px 20px;
-    box-shadow: 0 1PX 10px gray;
+/*     box-shadow: 0 1PX 10px gray; */
 }
 
 .sec-image{
@@ -392,7 +392,7 @@ nav ul li a span.rotate{
 .sec2-box{
     margin-bottom: 30px;
     padding: 20px 20px;
-    box-shadow: 0 1PX 10px gray;
+/*     box-shadow: 0 1PX 10px gray; */
 }
 
 
@@ -407,6 +407,7 @@ nav ul li a span.rotate{
     /* border: 2px solid red; */
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: #f4f4f4;
 }
 
 .main-col {
@@ -414,7 +415,7 @@ nav ul li a span.rotate{
     overflow: hidden;
     /* border: 2px solid green; */
     padding: 14px 19px;
-    box-shadow: 0 1PX 10px gray;
+/*     box-shadow: 0 1PX 10px gray; */
 }
 
 .main-col a{
@@ -467,7 +468,7 @@ nav ul li a span.rotate{
 
 .pri-news {
     padding: 20px 20px;
-    box-shadow: 0 1PX 10px grey;
+/*     box-shadow: 0 1PX 10px grey; */
     margin-bottom: 20px;
 }
 
@@ -651,9 +652,9 @@ nav ul li a span.rotate{
 
 .col1 .col1-news {
     margin-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: rgba(0, 0, 0, 0.02);
     padding: 8px 11px;
-    box-shadow: 0 1px 10px grey;
+    /* box-shadow: 0 1px 10px grey; */
 }
 
 .col1 .col1-news a{
@@ -715,10 +716,10 @@ font-size: 12px;
 
 .col2 .col2-news {
     margin-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: rgba(0, 0, 0, 0.02);
     margin-top: 0px;
     padding: 8px 11px;
-    box-shadow: 0 1PX 10px gray;
+    /* box-shadow: 0 1PX 10px gray; */
 }
 
 .col2 .col2-news a{
@@ -785,9 +786,9 @@ font-size: 12px;
 
 .col3 .col3-news {
     margin-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.06);
+    background-color: rgba(0, 0, 0, 0.02);
     padding: 8px 11px;
-    box-shadow: 0 1PX 10px gray;
+    /* box-shadow: 0 1PX 10px gray; */
 }
 
 .col3 .col3-news a{
@@ -867,18 +868,19 @@ font-size: 12px;
     /* border: 2px solid orange; */
     
 }
+
 .col-1 {
     display: flex;
     flex-direction: column;
     width: 71%;
     /* border: 1px solid red; */
     overflow: hidden;
-    padding: 15px 8px;
+    padding: 0px 0px;
     /* flex-wrap: wrap; */
     margin-right: 12px;
     margin-bottom: 50px;
     margin-left: -5px;
-    background-color: rgba(0, 0, 0, 0.06);
+    /* background-color: rgba(0, 0, 0, 0.02); */
     /* box-shadow: 0 1px 10px grey; */
 }
 
@@ -894,11 +896,10 @@ font-size: 12px;
     display: flex;
     padding-bottom: 30px;
     /* border-bottom: 1px solid #e2d8d8; */
-    box-shadow: 0 1PX 10px gray;
-    padding: 10px 10px;
+    /* box-shadow: 0 1PX 10px gray; */
+    padding: 0px 0px;
     margin: 14px 0px;
 }
-
 
 .col-1-info{
     display: flex;
@@ -1022,15 +1023,15 @@ font-size: 12px;
     z-index: 4;
 }
 
-.text-1 a >h5{
-    color: #fff;
+.text-1 a >h5 {
+    color: rgba(255,255,255,0.9);
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     /* text-shadow: 2px 3px 40px #fff; */
     padding: 4px 5px;
     font-family: 'PT Serif', serif;
-    letter-spacing: 1px;
-    line-height: 25px;
+    /* letter-spacing: 1px; */
+    line-height: 150%;
     /* text-align: justify; */
     margin: 0px 10px;
 }
@@ -1142,9 +1143,9 @@ color: #ffbd27;
     display: flex;
 }
 
-.icons ul li{
-    padding: 10px 40px;
-    font-size: 23px;
+.icons ul li {
+    padding: 1rem 2rem;
+    font-size: 35px;
 }
 
 .icons ul :first-child{
